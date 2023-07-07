@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8tup7dbdkd8e"]
+
+[ext_resource type="Texture2D" uid="uid://q6b5ffeu0odc" path="res://Robot/SPOILER_image.png" id="1_lnd6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ltwq"]
+size = Vector2(32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ac1r6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lnd6c")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}]
+
+[node name="Robot" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 16)
+shape = SubResource("RectangleShape2D_1ltwq")
+debug_color = Color(0, 0.596078, 0.72549, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 16)
+scale = Vector2(0.0467153, 0.0507937)
+sprite_frames = SubResource("SpriteFrames_ac1r6")
+animation = &"Default"
