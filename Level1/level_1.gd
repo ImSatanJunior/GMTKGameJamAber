@@ -18,3 +18,4 @@ func _unhandled_input(event):
 			if tileId == "Wall":
 				tilemap.set_cell(0, clickedTile, 0,Vector2i(0, -0))
 				tilesRemoved += 1
+				Global.setScore(tilesRemoved)

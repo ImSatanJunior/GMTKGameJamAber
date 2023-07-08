@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dv2tc3cfg3mil"]
+[gd_scene load_steps=7 format=3 uid="uid://dv2tc3cfg3mil"]
 
 [ext_resource type="Script" path="res://Level1/level_1.gd" id="1_6l88h"]
 [ext_resource type="PackedScene" uid="uid://b8tup7dbdkd8e" path="res://Robot/robot.tscn" id="1_cw7bj"]
 [ext_resource type="Texture2D" uid="uid://74vqig8k5rbe" path="res://Graphics/kenney_tiny_dungeon_tilemap_packed_16x16.png" id="2_7qycv"]
+[ext_resource type="Script" path="res://Level1/Label.gd" id="4_1ynj4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vef4d"]
 texture = ExtResource("2_7qycv")
@@ -406,3 +407,12 @@ layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608,
 
 [node name="Robot" parent="." instance=ExtResource("1_cw7bj")]
 position = Vector2(136, 32)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 896.0
+offset_top = 32.0
+offset_right = 1104.0
+offset_bottom = 96.0
+text = "Score"
+vertical_alignment = 1
+script = ExtResource("4_1ynj4")
