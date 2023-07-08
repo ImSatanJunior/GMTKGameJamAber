@@ -32,6 +32,13 @@ version_control/autoload_on_startup=true
 
 enabled=PackedStringArray()
 
+[input]
+
+move_left={
+"deadzone": 0.5,
+"events": []
+}
+
 [rendering]
 
 renderer/rendering_method="mobile"

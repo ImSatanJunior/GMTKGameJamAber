@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dv2tc3cfg3mil"]
+[gd_scene load_steps=10 format=3 uid="uid://dv2tc3cfg3mil"]
 
 [ext_resource type="Script" path="res://Level1/level_1.gd" id="1_6l88h"]
 [ext_resource type="PackedScene" uid="uid://b8tup7dbdkd8e" path="res://Robot/robot.tscn" id="1_cw7bj"]
 [ext_resource type="Texture2D" uid="uid://74vqig8k5rbe" path="res://Graphics/kenney_tiny_dungeon_tilemap_packed_16x16.png" id="2_7qycv"]
 [ext_resource type="Script" path="res://Level1/Label.gd" id="4_1ynj4"]
+[ext_resource type="Script" path="res://Level1/FinishLabel.gd" id="5_ylcfk"]
+[ext_resource type="Script" path="res://Level1/FinishHitbox.gd" id="6_wxysd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vef4d"]
 texture = ExtResource("2_7qycv")
@@ -396,6 +398,9 @@ custom_data_layer_0/name = "Name"
 custom_data_layer_0/type = 4
 sources/0 = SubResource("TileSetAtlasSource_vef4d")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gan6w"]
+size = Vector2(129, 128)
+
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_6l88h")
 
@@ -416,3 +421,17 @@ offset_bottom = 96.0
 text = "Score"
 vertical_alignment = 1
 script = ExtResource("4_1ynj4")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 328.0
+offset_top = 288.0
+offset_right = 840.0
+offset_bottom = 352.0
+script = ExtResource("5_ylcfk")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("6_wxysd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1088.5, 576)
+shape = SubResource("RectangleShape2D_gan6w")
