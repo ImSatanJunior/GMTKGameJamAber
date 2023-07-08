@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://clma21j5upsih"]
+
+[ext_resource type="Texture2D" uid="uid://c66w3nbgx18d" path="res://Graphics/robogamebckg.png" id="1_frwo1"]
+[ext_resource type="Script" path="res://Main/main.gd" id="1_ppbm7"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 640.0
+texture = ExtResource("1_frwo1")
+
+[node name="Play" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 152.0
+offset_right = 832.0
+offset_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+script = ExtResource("1_ppbm7")
+
+[node name="Quit" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 352.0
+offset_right = 832.0
+offset_bottom = 496.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Quit" to="Play" method="_on_quit_pressed"]
