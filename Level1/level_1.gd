@@ -17,3 +17,4 @@ func _unhandled_input(event):
 			var tileId = tilemap.get_cell_tile_data(0, clickedTile).get_custom_data("Name")
 			if tileId == "Wall":
 				tilemap.set_cell(0, clickedTile, 0,Vector2i(0, -0))
+				tilesRemoved += 1
