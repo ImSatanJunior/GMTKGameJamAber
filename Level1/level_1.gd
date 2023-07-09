@@ -19,3 +19,7 @@ func _unhandled_input(event):
 				tilemap.set_cell(0, clickedTile, -1)
 				tilesRemoved += 1
 				Global.setScore(tilesRemoved)
+
+
+func _onPlayButtonPressed():
+	Global.setMovementEnabled(true)

@@ -1,5 +1,9 @@
-extends Label
+extends TextureButton
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	self.text = "Score: " + str(Global.getScore())
+	
+
+
+func _on_pressed():
+	pass # Replace with function body.
