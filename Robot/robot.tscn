@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dij1jh14rmygu" path="res://Robot/robotfront.png" id="1_1245k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ltwq"]
-size = Vector2(24, 24)
+size = Vector2(16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ac1r6"]
 animations = [{
@@ -21,12 +21,12 @@ animations = [{
 script = ExtResource("1_4rah0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12, 20)
+position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_1ltwq")
 debug_color = Color(0, 0.596078, 0.72549, 0.419608)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(12, 20)
-scale = Vector2(0.585366, 0.631579)
+position = Vector2(8, 8)
+scale = Vector2(0.390244, 0.421053)
 sprite_frames = SubResource("SpriteFrames_ac1r6")
 animation = &"Default"

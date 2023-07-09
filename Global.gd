@@ -1,9 +1,6 @@
 extends Node
 
-<<<<<<< HEAD
 #Set The Users Current Level Score
-=======
->>>>>>> origin/main
 var score = 0
 
 func setScore(newScore):
@@ -12,11 +9,7 @@ func setScore(newScore):
 func getScore():
 	return score
 
-<<<<<<< HEAD
 #Set The Current Level Status
-=======
-
->>>>>>> origin/main
 var levelFinished = false
 
 func setLevelFinished(finished: bool):
@@ -25,7 +18,6 @@ func setLevelFinished(finished: bool):
 func getLevelFinished():
 	return levelFinished
 
-<<<<<<< HEAD
 #Set Whether The Robot Can Be Moved
 var movementEnanbled = false
 
@@ -34,5 +26,3 @@ func setMovementEnabled(enabled: bool):
 
 func getMovementEnabled():
 	return movementEnanbled
-=======
->>>>>>> origin/main

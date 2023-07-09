@@ -1,23 +1,15 @@
-<<<<<<< HEAD
 [gd_scene load_steps=3 format=3 uid="uid://clma21j5upsih"]
 
 [ext_resource type="Texture2D" uid="uid://c66w3nbgx18d" path="res://Graphics/robogamebckg.png" id="1_frwo1"]
-=======
-[gd_scene load_steps=2 format=3 uid="uid://clma21j5upsih"]
-
->>>>>>> origin/main
 [ext_resource type="Script" path="res://Main/main.gd" id="1_ppbm7"]
 
 [node name="MainMenu" type="Node2D"]
 
-<<<<<<< HEAD
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 640.0
 texture = ExtResource("1_frwo1")
 
-=======
->>>>>>> origin/main
 [node name="Play" type="Button" parent="."]
 anchors_preset = 8
 anchor_left = 0.5

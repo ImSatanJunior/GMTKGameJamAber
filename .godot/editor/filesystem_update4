@@ -1,10 +1,6 @@
 res://Level1/level_1.tscn
-res://Global.gd
-res://Robot/robot.gd
+res://MazeGeneration.gd
+res://Level1/level_1.gd
 res://Main/main.tscn
 res://Robot/robot.tscn
-res://Level1/Label.gd
-res://Level1/PlayButton.gd
-res://Level1/TextureButton.gd
-res://Level1/level_1.gd
-res://Level1/FinishHitbox.gd
+res://Level1/FinishLabel.gd
