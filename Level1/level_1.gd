@@ -16,6 +16,7 @@ func _unhandled_input(event):
 			print(tilemap.get_cell_tile_data(0, clickedTile).get)
 			var tileId = tilemap.get_cell_tile_data(0, clickedTile).get_custom_data("Name")
 			if tileId == "Wall":
+<<<<<<< HEAD
 				tilemap.set_cell(0, clickedTile, -1)
 				tilesRemoved += 1
 				Global.setScore(tilesRemoved)
@@ -23,3 +24,8 @@ func _unhandled_input(event):
 
 func _onPlayButtonPressed():
 	Global.setMovementEnabled(true)
+=======
+				tilemap.set_cell(0, clickedTile, 0,Vector2i(0, -0))
+				tilesRemoved += 1
+				Global.setScore(tilesRemoved)
+>>>>>>> origin/main

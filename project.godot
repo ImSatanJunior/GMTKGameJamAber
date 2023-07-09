@@ -13,7 +13,10 @@ config_version=5
 config/name="GMTK Game"
 run/main_scene="res://Main/main.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
+<<<<<<< HEAD
 boot_splash/bg_color=Color(0.890196, 0, 0.447059, 1)
+=======
+>>>>>>> origin/main
 config/icon="res://icon.svg"
 
 [autoload]
@@ -33,11 +36,14 @@ version_control/autoload_on_startup=true
 
 enabled=PackedStringArray()
 
+<<<<<<< HEAD
 [github_to_itch]
 
 config/itch_username="ImSatanJunior"
 config/itch_project_name=""
 
+=======
+>>>>>>> origin/main
 [input]
 
 move_left={

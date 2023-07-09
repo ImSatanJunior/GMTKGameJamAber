@@ -6,4 +6,7 @@ func _process(delta):
 	for body in get_overlapping_bodies():
 		if body.is_inside_tree():
 			Global.setLevelFinished(true)
+<<<<<<< HEAD
 			Global.setMovementEnabled(false)
+=======
+>>>>>>> origin/main
